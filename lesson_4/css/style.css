@@ -1,0 +1,109 @@
+/* Обнулення стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+/* Загальні класи */
+/* Заголовки секцій */
+h2.lorem,
+h1 {
+   color: brown;
+}
+
+* {
+   background-color: rgb(202, 198, 198);
+   color: white;
+}
+
+#home {
+   background-color: green;
+}
+
+section {
+   margin-bottom: 10px;
+}
+
+/* Повернутись на початок сторінки */
+
+.back-home {
+   color: rgb(240, 96, 30);
+   display: inline-block;
+   margin-top: 5px;
+}
+
+/* Загальні класи секцій */
+.block-text > p{
+   color: seagreen;
+}
+.item-text.text {
+   color: aqua;
+}
+
+
+/* Header */
+.header {
+   margin-bottom: 10px;
+}
+
+/* header меню */
+.header-list li {
+   color: sandybrown;
+}
+
+/* Основний блок */
+.main {
+}
+
+/* Секція 1 */
+.main-section-first {
+}
+
+
+/* Секція 2 */
+.main-section-second {
+}
+.main-second {
+}
+.main-second__block-text-two * {
+   color: black;
+}
+
+/* Секція 3 */
+.main-section-third {
+}
+.main-third {
+}
+
+/* Блок з текстом секції 3 */
+.main-thrid__block-p {
+}
+.block-p {
+}
+
+/* Контейнер для тексту */
+.block-p__div-p {
+}
+
+/* Різні тексти секції 3 */
+.block-p__lorem-two {
+}
+.block-p__lorem-three {
+}
+.block__p-lorem-four {
+}
+
+/* Секція 4 */
+.main-section-fourth {
+}
+.main-fourth {
+}
+.main-fourth-foto {
+}
+.main-fourth__foto-dog {
+}
+.main-fourth__foto-mops {
+}
+
+/* Підвал */
+.footer {
+}
