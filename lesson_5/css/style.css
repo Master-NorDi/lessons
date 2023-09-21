@@ -1,0 +1,217 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Обнулення стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+/* Загальні стилі */
+body {
+   font-family: "Inter", sans-serif;
+   color: #7D7D7D;
+   font-size: 18px;
+}
+
+.title {
+   font-family: "Poppins", sans-serif;
+   color: #37393F;
+   text-align: center;
+   margin-bottom: 15px;
+   text-transform: capitalize;
+}
+/* ---------------------------------------- */
+
+/* Header */
+.header {
+   text-align: center;
+}
+.header-logo img {
+   height: 65px;
+}
+.header-title {
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   font-size: 50px;
+   line-height: 1.50;
+   font-weight: 700;
+}
+
+.header-title span {
+   color: rgb(46, 189, 46);
+}
+
+/* Menu header */
+.menu {
+   margin-bottom: 15px;
+}
+.menu-list {
+}
+.menu-list__item {
+   font-size: 20px;
+   line-height: 1.5;
+   text-decoration: underline;
+   font-style: oblique;
+   color: salmon;
+}
+.menu-list__item-link {
+}
+.header-foto {
+}
+
+/* ---------------------------------------- */
+
+/* Content */
+.main {
+}
+
+/* Section Business */
+/* Business first block */
+.business-content {
+   margin: 70px 0px;
+}
+.business {
+}
+.business-team {
+}
+.business-team__title {
+   font-size: 40px;
+   line-height: 1.25; /* 50/40 */
+   margin-bottom: 15px;
+   font-weight: 600;
+}
+.business-team__text {
+   text-shadow: 0px 0px 6px rgb(19, 11, 11);
+   font-weight: 500;
+}
+.business-foto {
+}
+
+/* Business second block */
+.business-work {
+}
+.business-work__title {
+   font-size: 40px;
+   line-height: 1.25; /* 50/40 */
+   font-weight: 600;
+}
+.business-work__text {
+   margin: 15px 0;
+   font-family: "Ubuntu", sans-serif;
+   text-shadow: 0px 0px 6px rgb(19, 11, 11);
+   font-weight: 500;
+}
+.business-work__list {
+   margin: 15px 0;
+}
+.business-work__list-item {
+   list-style:inside;
+   font-family: "Ubuntu", sans-serif;
+   font-style: italic;
+}
+.business-block-information {
+   margin: 20px 0;
+   padding: 50px;
+   background-color: #40DDB6;
+   text-align: center;
+   font-family: "Ubuntu", sans-serif;
+   font-style: italic;
+}
+
+/* Section Project Information */
+.project-information {
+   margin: 70px 0;
+}
+
+.project-information-title {
+   font-size: 40px;
+   line-height: 1.25;
+   font-weight: 600;
+}
+
+.project-information-content {
+   
+}
+
+.project-information-content > p {
+   text-indent: 20px;
+   text-align: justify;
+}
+
+.project-information-foto {
+}
+
+.project-information__list {
+   margin: 15px 0;
+}
+.project-information__list-item {
+   list-style: inside;
+   font-family: "Montserrat", sans-serif;
+   font-style: italic;
+   font-weight: 500;
+   text-decoration: underline;
+   text-transform: capitalize;
+   word-spacing: 5px;
+}
+
+/* Section About Work */
+.about-work {
+   margin: 70px 0;
+}
+.about-work-content {
+}
+.about-work-foto {
+}
+.about-work__title {
+   font-size: 40px;
+   line-height: 1.25;
+   font-weight: 600;
+}
+.about-work__title ~ div {
+   text-decoration: line-through;
+}
+
+.about-work__text {
+}
+.about-work__subtitle {
+   color: #6B77E5;
+   font-size: 20px;
+   line-height: 1.27;
+   font-weight: 600;
+   margin: 15px 0 5px 0;
+   word-spacing: 10px;
+}
+.footer {
+   
+}
+.footer-text {
+
+}
+
+.footer-text-green {
+   color: rgba(61, 163, 61, 0.5);
+}
+
+.footer-text-purple {
+   color: rgba(128, 0, 128, 0.5);
+}
+
+.footer-messengers {
+   margin-top: 10px;
+}
+
+.footer-messengers p {
+   text-decoration: underline;
+   color: rgba(255, 0, 0, 0.7);
+}
+
+.footer-messengers img {
+   max-width: 50px;
+}
+
+.footer-messengers-instagram {
+}
+.footer-messengers-facebook {
+}
+.footer-messengers-twiter {
+}
