@@ -1,0 +1,25 @@
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Oswald:regular,500&display=swap");
+
+/* Файлові шрифти */
+
+@font-face {
+   font-family: "Pobeda";
+   src: 
+      url("../fonts/Pobeda-Regular.woff2") format("woff2"),
+      url("../fonts/Pobeda-Regular.woff") format("woff");
+   font-style: normal;
+   font-weight: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Pobeda";
+   src: 
+      url("../fonts/Pobeda-Bold.woff2") format("woff2"),
+      url("../fonts/Pobeda-Bold.woff") format("woff");
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+}
