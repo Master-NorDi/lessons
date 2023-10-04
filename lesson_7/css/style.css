@@ -1,0 +1,414 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Обнулення стилів */
+@import url("reset.css");
+
+
+/* Загальні стилі */
+.header {
+}
+
+body {
+   font-size: 18px;
+   font-family: "Inter", sans-serif;
+   color: #7D7D7D;
+   line-height: 1.46;
+}
+
+/* Header Container */
+.header-container {
+   max-width: 1250px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+/* Header body */
+.header-body {
+   padding: 30px 0px;
+   margin-bottom: 50px;
+}
+
+/* Logo */
+.header-logo img {
+   vertical-align: middle;
+}
+
+/* Header list */
+.menu {
+   display: inline-block;
+   vertical-align: middle;
+   text-align: right;
+   width: 794px;
+}
+.menu-list__item {
+   display: inline-block;
+   margin-right: 40px;
+   
+}
+
+/* Header button */
+.header-button {
+   padding: 21px 35px;
+   background-color: #6B77E5;
+   color: #fff;
+   font-weight: 600;
+   text-transform: capitalize;
+   vertical-align: middle;
+}
+
+
+/* content */
+.main {
+}
+
+/* custom jewels */
+.custom-jewels {
+   margin-bottom: 100px;
+}
+
+/* container custom jewels */
+.container-custom-jewels {
+   max-width: 1133px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+/* content custom jewels */
+.custom-jewels-content {
+}
+
+/* block create */
+.custom-jewels-create {
+   display: inline-block;
+   max-width: 503px;
+   vertical-align: top;
+   margin-right: 75px;
+   padding: 70px 0;
+}
+.custom-jewels-create__sub-title {
+   color: #D58417;
+   font-family: "Cormorant Infant", serif;
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 1;
+   text-transform: uppercase;
+   margin-bottom: 27px;
+}
+.custom-jewels-create__title {
+   color: #000;
+   font-family: "Cormorant Infant", serif;
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 1;
+   margin-bottom: 31px;
+}
+.custom-jewels-create__text {
+   color: #606060;
+   font-family: "Cormorant Infant", serif;
+   font-size: 30px;
+   font-weight: 700;
+   line-height: 1.4;
+}
+
+/* block image custom jewels */
+.custom-jewels-image {
+   display: inline-block;
+   font-size: 0;
+}
+
+.custom-jewels-image img {
+   vertical-align: middle;
+}
+
+/* left foto */
+.custom-jewels-image-left {
+   display: inline-block;
+   margin-right: 30px;
+   border-radius: 235px;
+   border: 1px solid #502203;
+}
+
+.custom-jewels-image-left img {
+   margin: 0px 0px -14px -10px;
+   padding: 14px 10px 0px 0px;
+}
+
+/* right foto */
+.custom-jewels-image-right {
+   display: inline-block;
+   border-radius: 235px;
+   border: 1px solid #502203;
+}
+
+.custom-jewels-image-right img {
+   margin: 0px 0px -19px -11px;
+   padding: 19px 11px 0px 0px;
+}
+
+
+
+
+/* project information */
+.project-information {
+   margin-bottom: 100px;
+}
+
+/* container project information */
+.container-project-information {
+   max-width: 860px;
+   margin: 0 auto;
+   padding: 15px;
+}
+
+/* content project information */
+.project-information-content {
+}
+
+.project-information__title {
+   color: #37393F;
+   font-family: "Poppins", sans-serif;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.27;
+   margin-bottom: 13px;
+}
+
+.project-information__text {
+}
+.project-information__text p {
+   margin-bottom: 35px;
+}
+.project-information__text p:last-child {
+   margin-bottom: 0;
+}
+
+.project-information__text-list {
+   margin-bottom: 35px;
+   padding-left: 43px;
+}
+.project-information__text-list-item {
+   list-style:disc;
+   margin-bottom: 30px;
+}
+.project-information__text-list-item:last-child {
+   margin-bottom: 0;
+}
+
+.project-information__text-num-list {
+   margin-bottom: 35px;
+   padding-left: 43px;
+}
+.project-information__text-num-list-item {
+   list-style:decimal-leading-zero;
+   margin-bottom: 30px;
+}
+.project-information__text-num-list-item:last-child {
+   margin-bottom: 0;
+}
+
+
+/* clothing women */
+.clothing-women {
+   margin-bottom: 100px;
+}
+
+/* container clothing women */
+.container-clothing-women {
+   max-width: 1270px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+/* content clothing women */
+.clothing-women-content {
+}
+
+.clothing-women-block-title {
+   font-size: 0;
+   margin-bottom: 30px;
+}
+.clothing-women-title-decor {
+   display: inline-block;
+   width: 6px;
+   height: 28px;
+   border-radius: 10px;
+   background: #8A33FD;
+   vertical-align: middle;
+   margin-right: 15px;
+}
+.clothing-women__title {
+   color: #3C4242;
+   font-family: "Core Sans C", sans-serif;
+   font-size: 28px;
+   font-weight: 600;
+   line-height: 1.19;
+   letter-spacing: 0.56px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.clothing-women__text {
+   padding-left: 21px;
+}
+.clothing-women__text span {
+   color: #807D7E;
+   font-family: "Causten", sans-serif;
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 1.67;
+   letter-spacing: 0.4px;
+}
+.clothing-women__text p {
+   color: #807D7E;
+   font-family: "Causten", sans-serif;
+   font-size: 20px;
+   line-height: 1.67;
+   letter-spacing: 0.4px;
+   margin-bottom: 20px;
+}
+.clothing-women__text p:last-child {
+   margin-bottom: 0;
+}
+
+.clothing-women__text-title {
+   color: #807D7E;
+   font-family: "Core Sans C", sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.67;
+   letter-spacing: 0.4px;
+   margin-bottom: 25px;
+}
+.clothing-women__text-title:last-child {
+   margin-bottom: 0;
+}
+.clothing-women__text-link {
+}
+
+
+/* licencing */
+.licencing {
+   margin-bottom: 100px;
+}
+
+/* licencing container */
+.container-licencing {
+   max-width: 1248px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+/* licencing content */
+.licencing-content {
+}
+
+.licencing__sub-title {
+   color: #37393F;
+   font-weight: 500;
+   text-align: center;
+   margin-bottom: 16px;
+}
+.licencing__sub-title span {
+   display: inline-block;
+   width: 12px;
+   height: 12px;
+   background: #40DDB6;
+   margin-right: 6px;
+}
+
+.licencing__title {
+   text-align: center;
+   color: #37393F;
+   font-family: "Poppins", sans-serif;
+   font-size: 60px;
+   font-weight: 700;
+   line-height: 1.21;
+   margin-bottom: 70px;
+}
+
+
+/* general style licencing */
+.licencing-title {
+   color: #37393F;
+   font-family: "Poppins", sans-serif;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.21;
+   margin-bottom: 11px;
+}
+.licencing-title:last-child {
+   margin-bottom: 0;
+}
+
+.licencing-sub-title {
+   color: #37393F;
+   font-family: "Poppins", sans-serif;
+   font-size: 30px;
+   font-weight: 700;
+}
+.licencing-sub-title span {
+   color: #40DDB6;
+   font-weight: 400;
+}
+
+/* licencing graphics */
+.licencing-icons-graphics {
+   margin-bottom: 100px;
+}
+.licencing-icon-graphics__title {
+}
+.licencing-icon-graphics__text {
+   margin-bottom: 32px;
+}
+.licencing-icons-graphics__sub-title {
+}
+.licencing-icons-graphics__sub-title-color {
+}
+
+/* licencing photography */
+.licencing-photography {
+   margin-bottom: 100px
+}
+.licencing-photography__title {
+}
+.licencing-photography__text {
+   margin-bottom: 24px;
+}
+.licencing-photography__items {
+   margin-bottom: 24px;
+}
+.licencing-photography__items:last-child {
+   margin-bottom: 0
+}
+.licencing-photography__items p {
+   color: #40DDB6;
+}
+.licencing-photography__items-sub-title {
+   margin-bottom: 8px;
+}
+.licencing-photography__items-sub-title-color {
+}
+
+/* licencing fonts */
+.licencing-fonts {
+}
+.licencing-fonts__title {
+}
+.licencing-fonts__text {
+}
+.licencing-fonts__text span {
+   color: #40DDB6;
+   font-weight: 500;
+}
+
+/* footer */
+.footer {
+   padding: 50px 0;
+   text-align: center;
+   color: #fff;
+   background-color: #0E333D;
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 1.3;
+}
