@@ -1,0 +1,371 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Обнулення стилів */
+@import url("reset.css");
+
+
+/* Загальні стилі */
+.header {
+   margin-bottom: 50px;
+}
+
+body {
+   font-size: 18px;
+   font-family: "Inter", sans-serif;
+   color: #7D7D7D;
+   line-height: 1.46;
+}
+
+/* Header Container */
+.header-container {
+   max-width: 1250px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+/* Header body */
+.header-body {
+   padding: 20px 0px;
+}
+
+/* Logo */
+.header-logo img {
+   vertical-align: middle;
+}
+
+/* Header list */
+.menu {
+   display: inline-block;
+   vertical-align: middle;
+   text-align: right;
+   width: 794px;
+}
+.menu-list__item {
+   display: inline-block;
+   margin-right: 40px;
+   
+}
+
+/* Header button */
+.header-button {
+   padding: 21px 35px;
+   background-color: #6B77E5;
+   color: #fff;
+   font-weight: 600;
+   text-transform: capitalize;
+   vertical-align: middle;
+   display: inline-block;
+}
+
+
+/* content */
+.main {
+}
+
+.fashion {
+   margin-bottom: 100px;
+}
+.container-fashion {
+   max-width: 1240px;
+   margin: 0 auto;
+}
+.fashion-body {
+   background: url("../img/leaf.png") top left / 50% 100% no-repeat,
+               url("../img/people.png") top right / 50% 100% no-repeat;
+   padding: 183px 74px 140px;
+}
+.fashion-content {
+   max-width: 466px;
+}
+.fashion__title {
+   color: #FFF;
+   font-family: "Core Sans C", sans-serif;
+   font-size: 34px;
+   font-weight: 800;
+   line-height: 1.47;
+   letter-spacing: 0.208px;
+   text-transform: uppercase;
+}
+.fashion__text {
+   color: #FFF;
+   font-family: "Causten", sans-serif;
+   font-size: 20px;
+   font-weight: 300;
+   letter-spacing: 1px;
+   margin: 30px 0 50px;
+}
+.fashion__link {
+   display: inline-block;
+   color: #3C4242;
+   font-family: "Causten", sans-serif;
+   font-weight: 600;
+   padding: 12px 44px;
+   background-color: #fff;
+   border-radius: 8px;
+}
+
+
+/* clothing women */
+.clothing-women {
+   margin-bottom: 100px;
+}
+
+/* container clothing women */
+.container-clothing-women {
+   max-width: 1270px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+/* content clothing women */
+.clothing-women-content {
+}
+
+.clothing-women-block-title {
+   font-size: 0;
+   margin-bottom: 30px;
+}
+.clothing-women-title-decor {
+   display: inline-block;
+   width: 6px;
+   height: 28px;
+   border-radius: 10px;
+   background: #8A33FD;
+   vertical-align: middle;
+   margin-right: 15px;
+}
+.clothing-women__title {
+   color: #3C4242;
+   font-family: "Core Sans C", sans-serif;
+   font-size: 28px;
+   font-weight: 600;
+   line-height: 1.19;
+   letter-spacing: 0.56px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.clothing-women__text {
+   padding-left: 21px;
+}
+.clothing-women__text span {
+   color: #807D7E;
+   font-family: "Causten", sans-serif;
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 1.67;
+   letter-spacing: 0.4px;
+}
+.clothing-women__text p {
+   color: #807D7E;
+   font-family: "Causten", sans-serif;
+   font-size: 20px;
+   line-height: 1.67;
+   letter-spacing: 0.4px;
+   margin-bottom: 20px;
+}
+.clothing-women__text p:last-child {
+   margin-bottom: 0;
+}
+
+.clothing-women__text-title {
+   color: #807D7E;
+   font-family: "Core Sans C", sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.67;
+   letter-spacing: 0.4px;
+   margin-bottom: 25px;
+}
+.clothing-women__text-title:last-child {
+   margin-bottom: 0;
+}
+.clothing-women__text-link {
+   display: inline-block;
+}
+
+.business {
+}
+.container-business {
+   max-width: 703px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.business-content {
+}
+.business__sub-title {
+   color: #37393F;
+   font-weight: 500;
+   margin-bottom: 16px;
+}
+.business__sub-title span {
+   display: inline-block;
+   height: 12px;
+   width: 12px;
+   background-color: #40DDB6;
+   margin-right: 6px;
+}
+.business__title {
+   color: #37393F;
+   font-family: "Poppins", sans-serif;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.21;
+   margin-bottom: 10px;
+}
+.business-text {
+   margin-bottom: 48px;
+}
+.business-text p {
+   margin-bottom: 16px;
+}
+
+.business-text p:last-child {
+   margin-bottom: 0;
+}
+
+.business-items {
+   margin-bottom: 48px;
+}
+.business-items__item {
+   border: 1px solid #E3E3E3;
+   padding: 28px 40px;
+   margin-bottom: 31px;
+}
+.business-items__item:last-child {
+   margin-bottom: 0px;
+}
+.business-items__item-title {
+   color: #37393F;
+   font-family: "Poppins", sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   background: url("../img/icon/mark.png") no-repeat;
+   padding-left: 46px;
+   margin-bottom: 12px;
+}
+.business-items__item-text {
+   padding-left: 46px;
+}
+.business__link {
+   padding: 21px 35px;
+   background: #6B77E5;
+   color: #FFF;
+   font-weight: 600;
+   line-height: normal;
+   text-transform: capitalize;
+   display: inline-block;
+}
+.projects {
+   padding: 150px 0px;
+}
+.container-projects {
+   max-width: 1250px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+.projects-content {
+}
+.projects__subtitle {
+   text-align: center;
+   color: #37393F;
+   font-weight: 500;
+   margin-bottom: 14px;
+}
+.projects__subtitle span {
+   width: 12px;
+   height: 12px;
+   background: #40DDB6;
+   display: inline-block;
+   margin-right: 6px;
+}
+.projects__title {
+   text-align: center;
+   color: #37393F;
+   font-family: "Poppins", sans-serif;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.21;
+   margin-bottom: 14px;
+}
+.projects__text {
+   text-align: center;
+   max-width: 852px;
+   margin: 0 auto;
+   margin-bottom: 47px;
+}
+.projects-items {
+   font-size: 0;
+}
+.projects-items-block {
+   margin-bottom: 58px;
+}
+.projects-items__item {
+   display: inline-block;
+   font-size: 18px;
+}
+.projects-items__item-foto-1 {
+   background: url("../img/item-foto-1.png") top left / cover no-repeat;
+   width: 384px;
+   padding-top: 501px;
+   margin-right: 34px;
+   margin-bottom: 24px;
+}
+.projects-items__item-foto-2 {
+   background: url("../img/item-foto-2.png") top left / cover no-repeat;
+   width: 384px;
+   padding-top: 501px;
+   margin-right: 34px;
+   margin-bottom: 24px;
+}
+.projects-items__item-foto-3 {
+   background: url("../img/item-foto-3.png") top left / cover no-repeat;
+   width: 384px;
+   padding-top: 501px;
+   margin-bottom: 24px;
+}
+.projects-items__item-foto-4 {
+   background: url("../img/item-foto-4.png") top left / cover no-repeat;
+   width: 384px;
+   padding-top: 501px;
+   margin-right: 34px;
+   margin-bottom: 24px;
+}
+.projects-items__item-foto-5 {
+   background: url("../img/item-foto-5.png") top left / cover no-repeat;
+   width: 384px;
+   padding-top: 501px;
+   margin-right: 34px;
+   margin-bottom: 24px;
+}
+.projects-items__item-foto-6 {
+   background: url("../img/item-foto-6.png") top left / cover no-repeat;
+   width: 384px;
+   padding-top: 501px;
+   margin-bottom: 24px;
+}
+.projects-items__item-title {
+   color: #37393F;
+   font-family: "Poppins", sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.27px;
+   margin-bottom: 15px;
+}
+.projects-items__item-data {
+   font-size: 14px;
+   background: url("../img/icon/calendar.svg") no-repeat;
+   padding-left: 25px;
+}
+
+/* footer */
+.footer {
+   padding: 50px 0;
+   text-align: center;
+   color: #fff;
+   background-color: #0E333D;
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 1.3;
+}
