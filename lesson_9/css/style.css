@@ -1,0 +1,717 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Обнулення стилів */
+@import url("reset.css");
+
+/* Загальні стилі */
+body {
+   font-size: 18px;
+   font-family: "Inter", sans-serif;
+   color: #7D7D7D;
+}
+
+.title {
+   color: #37393F;
+   font-family: "Poppins", sans-serif;
+}
+
+/* Основні стилі */
+.wrapper {
+   background: url(../img/repeat.jpg);
+}
+.content-container {
+   max-width: 1500px;
+   margin: 0 auto;
+   background-color: #fff;
+   height: 100%;
+   padding: 0 80px;
+   position: relative;
+}
+.content-container::before {
+   content: "";
+   display: inline-block;
+   width: 50px;
+   height: 100%;
+   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,190,228,0) 100%);
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.content-container::after {
+   content: "";
+   display: inline-block;
+   width: 50px;
+   height: 100%;
+   background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+.header {
+   padding: 20px 0;
+}
+.header__logo img{
+   vertical-align: middle;
+}
+.menu {
+   width: 1000px;
+   display: inline-block;
+   vertical-align: middle;
+   text-align: right;
+   position: relative;
+}
+
+/* Головна кнопка меню */
+.menu__button {
+   display: inline-block;
+   padding: 21px 55px;
+   font-weight: 600;
+   text-transform: capitalize;
+   background: #6B77E5;
+   color: #fff;
+}
+
+/* Ефект при наведенні на головну кнопку меню */
+.menu__button:hover {
+   border: 2px solid #6B77E5;
+   background: #fff;
+   color: #6B77E5;
+   padding: 19px 53px;
+}
+
+
+/* Меню список */
+.menu-list {
+   display: none;
+   text-align: left;
+   background: #5d66b4;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+}
+
+/* Відкриває список */
+.menu-list:target {
+   display: block;
+   position: absolute;
+   top: 63px;
+   right: 1px;
+}
+
+.menu-list__item {
+   font-weight: 500;
+}
+
+/* Ефект при наведенні на елемент списку */
+.menu-list__item:hover {
+   text-decoration: underline;
+}
+
+/* Всі елементи списку крім останнього */
+.menu-list__item:not(:last-child) {
+   margin-bottom: 15px;
+}
+
+/* Останній елемент списку */
+.menu-list__item:last-child {
+   margin-top: 25px;
+   color: rgb(230, 69, 69);
+   text-shadow: 0px 0px 3px #000;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+
+/* Останній елемент списку ( закривання меню ) при наведенні */
+.menu-list__item:hover:last-child {
+   color: red;
+   text-shadow: 0px 0px 10px #000;
+   font-weight: 700;
+   text-decoration: none;
+}
+
+
+/* Content */
+.main {
+}
+
+/* Mentor */
+.mentor {
+   padding: 60px 0;
+}
+.mentor-container {
+   max-width: 1130px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+.mentor-items {
+   font-size: 0;
+}
+.mentor-items__hover {
+   padding: 50px;
+   background-color: green;
+   color: #fff;
+   font-size: 18px;
+   text-align: center;
+   max-width: 200px;
+   text-transform: uppercase;
+}
+
+.mentor-items__hover:hover + .mentor-items__item, 
+.mentor-items__item:hover {
+   visibility: visible;
+}
+.mentor-items__item:hover + .mentor-items__item-2,
+.mentor-items__item-2:hover {
+   visibility: visible;
+}
+.mentor-items__item-2:hover + .mentor-items__item-3,
+.mentor-items__item-3:hover {
+   visibility: visible;
+}
+
+.mentor-items__item {
+   visibility: hidden;
+   display: inline-block;
+   background: #40DDB6;
+   padding: 70px;
+   color: #fff;
+   font-size: 25px;
+}
+
+.mentor-items__item-2 {
+   display: inline-block;
+   visibility: hidden;
+   background: #42c2a2;
+   padding: 70px;
+   color: #fff;
+   font-size: 25px;
+}
+.mentor-items__item-3 {
+   display: inline-block;
+   visibility: hidden;
+   background: #3aa88d;
+   padding: 70px;
+   color: #fff;
+   font-size: 25px;
+}
+
+/* Work */
+.work {
+   text-align: center;
+   padding: 100px 0;
+}
+.container-work {
+   max-width: 1250px;
+   padding: 0px 15px;
+   margin: 0 auto;
+}
+.work__sub-title {
+   color: #37393F;
+   font-weight: 500;
+   margin-bottom: 16px;
+}
+.work__sub-title::before {
+   content: "";
+   display: inline-block;
+   width: 12px;
+   height: 12px;
+   background: #40DDB6;
+   margin-right: 6px;
+}
+.work__title {
+   margin-bottom: 77px;
+}
+.work-items {
+   font-size: 0;
+}
+.work-items__item {
+   display: inline-block;
+   max-width: 386px;
+   padding: 58px 43px;
+   background: #F4F4F4;
+   font-size: 18px;
+   position: relative;
+}
+.work-items__item:nth-child(1)::before {
+   content: "";
+   display: inline-block;
+   width: 72px;
+   height: 72px;
+   background: url(../img/icon/calendar.png) 0 0 / cover no-repeat;
+   position: absolute;
+   top: -36px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.work-items__item:nth-child(2)::before {
+   content: "";
+   display: inline-block;
+   width: 72px;
+   height: 72px;
+   background: url(../img/icon/pazle.png) 0 0 / cover no-repeat;
+   position: absolute;
+   top: -36px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.work-items__item:nth-child(3)::before {
+   content: "";
+   display: inline-block;
+   width: 72px;
+   height: 72px;
+   background: url(../img/icon/servise.png) 0 0 / cover no-repeat;
+   position: absolute;
+   top: -36px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.work-items__item:not(:last-child) {
+   margin-right: 31px;
+}
+.work-items__item-title {
+   color: #37393F;
+   font-family: "Poppins", sans-serif;
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 1.27;
+   margin-bottom: 16px;
+}
+.work-items__item-text {
+   line-height: 1.46;
+   margin-bottom: 37px;
+}
+.work-items__item-link {
+   color: #6B77E5;
+   font-weight: 600;
+   text-transform: capitalize;
+}
+.work-items__item-link:hover {
+   text-decoration: underline;
+}
+
+/* Consulting */
+.consulting {
+   padding: 100px 0;
+}
+.container-consulting {
+   max-width: 722px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.consulting__title {
+   font-size: 30px;
+   font-weight: 600;
+   line-height: 1.27;
+   margin-bottom: 15px;
+}
+.consulting__text {
+   line-height: 1.46;
+   margin-bottom: 42px;
+}
+.consulting__sub-title {
+   color: #6B77E5;
+   font-family: "Poppins", sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.27;
+   margin-bottom: 12px;
+}
+.consulting-sub-title__text {
+   line-height: 1.46;
+   margin-bottom: 40px;
+}
+
+.benefits {
+   font-size: 0;
+}
+.benefits__foto {
+   margin-right: 29px;
+}
+.benefits__block {
+   display: inline-block;
+   max-width: 332px;
+   font-size: 18px;
+}
+.benefits__block-title {
+   color: #37393F;
+   font-family: "Poppins", sans-serif;
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 1.27;
+   margin-bottom: 15px;
+}
+.benefits__block-sub-title {
+   color: #40DDB6;
+   font-family: "Poppins", sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.27;
+   margin-bottom: 27px;
+}
+
+.benefits-list__item::before {
+   content: "";
+   display: inline-block;
+   width: 27px;
+   height: 27px;
+   background: url(../img/icon/mark.png) 0 0 / cover no-repeat;
+   margin-right: 8px;
+   vertical-align: middle;
+}
+.benefits-list__item:not(:last-child) {
+   margin-bottom: 30px;
+}
+
+/* business */
+.business {
+   padding: 100px 0;
+}
+.container-business {
+   max-width: 705px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.business__sub-title {
+   color: #37393F;
+   font-weight: 500;
+   margin-bottom: 16px;
+}
+.business__sub-title::before {
+   content: "";
+   display: inline-block;
+   width: 12px;
+   height: 12px;
+   background: #40DDB6;
+   margin-right: 6px;
+}
+.business__title {
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.21;
+   margin-bottom: 10px;
+   max-width: 431px;
+}
+.business__text {
+   line-height: 1.46;
+   margin-bottom: 48px;
+}
+.business__text p:not(:last-child) {
+   margin-bottom: 16px;
+}
+.business-items {
+   margin-bottom: 48px;
+}
+.business-items__item {
+   border: 1px solid #E3E3E3;
+   padding: 28px 40px;
+}
+.business-items__item:not(:last-child) {
+   margin-bottom: 31px;
+}
+.business-items__item-title {
+   color: #37393F;
+   font-family: "Poppins", sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 12px;
+}
+.business-items__item-title::before {
+   content: "";
+   display: inline-block;
+   width: 27px;
+   height: 27px;
+   background: url(../img/icon/mark.png) 0 0 / cover no-repeat;
+   margin-right: 8px;
+   vertical-align: middle;
+}
+.business-items__item-text {
+   line-height: 1.46;
+   padding-left: 46px;
+}
+.business-link {
+   display: inline-block;
+   background: #6B77E5;
+   padding: 21px 35px;
+   color: #FFF;
+   font-weight: 600;
+   text-transform: capitalize;
+}
+.business-link:hover {
+   border-radius: 5px;
+   background: #5059aa;
+}
+
+/* Jewels */
+.jewels {
+   font-family: "Cormorant Infant", serif;
+   padding: 100px 0;
+}
+.container-jewels {
+   max-width: 1244px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.jewels-content {
+   vertical-align: top;
+}
+.jewels__title {
+   color: #000;
+   font-size: 60px;
+   font-weight: 700;
+   line-height: 1.15;
+   max-width: 460px;
+   display: inline-block;
+   vertical-align: top;
+   padding-top: 150px;
+   margin-right: 20px;
+}
+.jewels__title::after {
+   content: "";
+   width: 65%;
+   height: 3px;
+   background: #78473B;
+   display: block;
+   margin-top: 13px;
+}
+.jewels-earrings {
+   display: inline-block;
+   margin-right: 55px;
+   max-width: 334px;
+   vertical-align: top;
+   padding-top: 35px;
+}
+.jewels-earrings__foto {
+   border: 1px solid #000;
+   padding: 9px 0px 0px 10px;
+   margin-bottom: 34px;
+}
+.jewels-earrings__foto img {
+   margin: 0px -9px -10px 0px;
+}
+.jewels-earrings__text {
+color: #000;
+font-size: 24px;
+font-weight: 700;
+line-height: 1.40;
+}
+.jewels-earrings__price {
+   color: #000;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.40;
+}
+.jewels-carrings {
+   display: inline-block;
+   max-width: 334px;
+   vertical-align: top;
+}
+.jewels-carrings__title {
+   color: #000;
+   font-size: 46px;
+   font-weight: 700;
+   line-height: 1.13;
+   margin-bottom: 31px;
+}
+.jewels-carrings__title span {
+   display: block;
+}
+.jewels-carrings__foto {
+   border: 1px solid #000;
+   padding: 9px 0px 0px 10px;
+   margin-bottom: 34px;
+}
+.jewels-carrings__foto img {
+   margin: 0px -9px -10px 0px;
+}
+.jewels-carrings__text {
+   color: #000;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.40;
+}
+.jewels-carrings__price {
+   color: #000;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.40;
+}
+
+/* game */
+.game {
+   padding: 100px 0;
+}
+.container-game {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+.game-body {
+   border: 1px solid #000;
+   height: 700px;
+   width: 700px;
+   margin: 0 auto;
+   font-size: 0;
+}
+.game-title {
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.21;
+   text-align: center;
+   text-transform: uppercase;
+}
+.game-line {
+   visibility: hidden;
+}
+.game-line-1 {
+   visibility: visible;
+   width: 50px;
+   height: 50px;
+   background-color: green;
+}
+.game-line-2 {
+   width: 50px;
+   height: 50px;
+   background-color: green;
+   display: inline-block;
+}
+.game-line-3 {
+   width: 300px;
+   height: 50px;
+   background-color: green;
+   display: inline-block;
+}
+.game-line-4 {
+   width: 50px;
+   height: 150px;
+   background-color: green;
+   margin-left: 300px;
+}
+.game-line-5 {
+   width: 200px;
+   height: 30px;
+   background-color: green;
+   margin-top: -30px;
+   margin-left: 100px;
+}
+.game-line-6 {
+   width: 10px;
+   height: 150px;
+   background-color: green;
+   margin-left: 100px;
+}
+.game-line-7 {
+   width: 400px;
+   height: 30px;
+   background-color: green;
+   margin-left: 110px;
+   margin-top: -30px;
+}
+.game-line-8 {
+   width: 30px;
+   height: 150px;
+   background-color: green;
+   margin-left: 480px;
+}
+.game-line-9 {
+   width: 150px;
+   height: 20px;
+   background-color: green;
+   margin-left: 330px;
+   margin-top: -20px;
+}
+.game-line-10 {
+   width: 3px;
+   height: 90px;
+   background-color: green;
+   margin-left: 330px;
+}
+.game-line-11 {
+   width: 55px;
+   height: 58px;
+   background-color: red;
+   margin-left: 305px;
+   font-size: 18px;
+   padding: 10px;
+   line-height: 1;
+   color: #fff;
+}
+.game-line-11 span {
+   display: none;
+}
+.game-line-11:hover span{
+   display: inline;
+}
+.game-line-12 {
+   width: 50px;
+   height: 3px;
+   background-color: green;
+   margin-left: 255px;
+   margin-top: -30px;
+}
+.game-line-13 {
+   width: 55px;
+   height: 58px;
+   background-color: red;
+   margin-left: 200px;
+   margin-top: -31px;
+}
+
+.game-line-1:hover + .game-line-2,
+.game-line-2:hover {
+   visibility: visible;
+}
+.game-line-2:hover + .game-line-3,
+.game-line-3:hover {
+   visibility: visible;
+}
+.game-line-3:hover + .game-line-4,
+.game-line-4:hover {
+   visibility: visible;
+}
+.game-line-4:hover + .game-line-5,
+.game-line-5:hover {
+   visibility: visible;
+}
+.game-line-5:hover + .game-line-6,
+.game-line-6:hover {
+   visibility: visible;
+}
+.game-line-6:hover + .game-line-7,
+.game-line-7:hover {
+   visibility: visible;
+}
+.game-line-7:hover + .game-line-8,
+.game-line-8:hover {
+   visibility: visible;
+}
+.game-line-8:hover + .game-line-9,
+.game-line-9:hover {
+   visibility: visible;
+}
+.game-line-9:hover + .game-line-10,
+.game-line-10:hover {
+   visibility: visible;
+}
+.game-line-10:hover + .game-line-11,
+.game-line-11:hover {
+   visibility: visible;
+}
+.game-line-11:hover + .game-line-12,
+.game-line-12:hover {
+   visibility: visible;
+}
+.game-line-12:hover + .game-line-13,
+.game-line-13:hover {
+   visibility: visible;
+}
+
+.footer {
+   padding: 50px 0;
+   font-size: 40px;
+   line-height: 1.27;
+   font-weight: 700;
+   text-align: center;
+   color: #fff;
+   background-color: #37393F;
+}
