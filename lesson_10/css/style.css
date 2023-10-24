@@ -1,0 +1,25 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Обнулення стилів */
+@import url("reset.css");
+
+/* Загальні стилі */
+body {
+   background: rgb(201, 200, 200);
+   padding: 20px;
+}
+
+img {
+   max-width: 1000px;
+}
+
+p:not(:last-child) {
+   margin-bottom: 50px;
+   font-size: 22px;
+   font-family: "Inter", sans-serif;
+   font-weight: 700;
+}
+p img {
+   margin-right: 20px;
+}
