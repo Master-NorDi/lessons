@@ -1,0 +1,217 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Обнулення стилів */
+@import url("reset.css");
+
+.car__container {
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 250px 0;
+}
+
+.carcase {
+   position: relative;
+}
+
+.carcase__body {
+   width: 650px;
+   height: 150px;
+   position: absolute;
+   top: 200px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: black;
+   border-radius: 45% 10% 0% 0%;
+}
+
+.carcase__right-wheels,
+.carcase__left-wheels {
+   position: absolute;
+   width: 120px;
+   background: #fff;
+   border-radius: 50%;
+   padding: 3px;
+   z-index: 5;
+}
+
+.carcase__left-wheels {
+   top: 270px;
+   left: 195px;
+}
+.carcase__right-wheels {
+   top: 270px;
+   left: 620px;
+}
+
+.carcase__left-door,
+.carcase__right-door {
+   position: absolute;
+   width: 150px;
+   height: 147px;
+   background-color: black;
+   border: 1px solid #a5a5a5;
+   transform: skew(-5deg);
+   z-index: 4;
+}
+
+.carcase__left-door {
+   top: 200px;
+   left: 335px;
+   border-radius: 0px 0 5px 0px;
+}
+.carcase__right-door {
+   top: 200px;
+   left: 490px;
+   border-radius: 0px 0px 0px 5px;
+}
+
+.carcase__handle-right-door,
+.carcase__handle-left-door {
+   position: absolute;
+   width: 35px;
+   height: 10px;
+   background-color: grey;
+   border-radius: 30%;
+   z-index: 5;
+}
+
+.carcase__handle-left-door {
+   top: 215px;
+   left: 435px;
+}
+.carcase__handle-right-door {
+   top: 215px;
+   left: 590px;
+}
+
+
+.carcase__left-detals,
+.carcase__right-detals {
+   position: absolute;
+   width: 40px;
+   height: 20px;
+   background-color: rgb(49, 49, 49);
+}
+.carcase__left-detals {
+   top: 331px;
+   left: 124px;
+   border-radius: 0px 0px 2px 5px;
+}
+.carcase__right-detals {
+   top: 331px;
+   left: 749px;
+   width: 27px;
+   border-radius: 0px 0px 5px 2px;
+}
+.carcase__center-detals {
+   position: absolute;
+   top: 349px;
+   left: 311px;
+   width: 313px;
+   height: 5px;
+   background-color: rgb(49, 49, 49);
+}
+
+.carcase__top {
+   position: absolute;
+   top: 90px;
+   left: 303px;
+   background-color: black;
+   width: 400px;
+   height: 121px;
+   border-radius: 65% 50% 0% 0%;
+}
+
+.carcase__left-window-top,
+.carcase__right-window-top {
+   position: absolute;
+   background-color: #929292;
+   transform: skew(-5deg);
+}
+
+.carcase__left-window-top {
+   top: 26px;
+   left: 42px;
+   width: 150px;
+   height: 83px;
+   border-radius: 100% 0% 0% 0%;
+}
+
+.carcase__right-window-top {
+   top: 26px;
+   left: 198px;
+   width: 149px;
+   height: 83px;
+   border-radius: 0% 45% 0% 0%;
+}
+
+.carcase__detal-top {
+   position: absolute;
+   top: -14px;
+   left: -101px;
+   width: 150px;
+   height: 149px;
+   background-color: #fff;
+   transform: skewX(-50deg) rotate(346deg);
+}
+
+
+.carcase__left-headlights,
+.carcase__right-headlights {
+   position: absolute;
+}
+.carcase__left-headlights {
+   top: 238px;
+   left: 125px;
+   width: 30px;
+   height: 25px;
+   background-color: rgb(218, 221, 18);
+   border-radius: 100% 0% 50% 0%;
+   border-right: 3px solid grey;
+   border-bottom: 3px solid grey;
+}
+.carcase__right-headlights {
+   top: 202px;
+   left: 746px;
+   width: 30px;
+   height: 25px;
+   background-color: rgb(185, 36, 36);
+   border-radius: 0% 100% 47% 50%;
+   border-left: 2px solid grey;
+   border-bottom: 2px solid grey;
+}
+
+.carcase__light-left-headlights {
+   width: 30px;
+   height: 25px;
+   position: absolute;
+   top: 0;
+   left: 0px;
+   background-color: rgb(251, 255, 0);
+   border-radius: 100% 0% 50% 0%;
+   border-right: 3px solid grey;
+   border-bottom: 3px solid grey;
+   visibility: hidden;
+}
+
+.carcase__light-right-headlights {
+   position: absolute;
+   top: 0px;
+   left: -2px;
+   width: 30px;
+   height: 25px;
+   background-color: rgb(255, 0, 0);
+   border-radius: 0% 100% 47% 50%;
+   border-left: 2px solid grey;
+   border-bottom: 2px solid grey;
+   visibility: hidden;
+}
+
+.carcase:hover .carcase__light-left-headlights {
+   visibility: visible;
+}
+
+.carcase:hover .carcase__light-right-headlights {
+   visibility: visible;
+}
