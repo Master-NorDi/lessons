@@ -1,0 +1,730 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Обнулення стилів */
+@import url("reset.css");
+
+/* Загальні стилі */
+.wrapper {
+   min-height: 100%;
+   overflow: flip;
+   padding: 100px 0;
+}
+
+.time--margin {
+   margin-bottom: 100px;
+}
+
+.time {
+   position: relative;
+   background: url(../img/time/time.png) 0 0/cover no-repeat;
+   width: 225px;
+   height: 225px;
+   max-width: 225px;
+   margin: 0 auto;
+}
+
+.time::before {
+   content: "";
+   position: absolute;
+   top: 44px;
+   left: 110px;
+   width: 5px;
+   height: 30%;
+   background-color: black;
+   transform-origin: bottom;
+   animation-name: time;
+   animation-iteration-count: infinite;
+   animation-duration: 60s;
+   animation-timing-function: linear;
+   border-radius: 50% 50% 20% 20%;
+}
+
+.time::after {
+   content: "";
+   position: absolute;
+   top: 57px;
+   left: 110px;
+   width: 5px;
+   height: 25%;
+   background-color: black;
+   transform-origin: bottom;
+   animation-name: time;
+   animation-iteration-count: infinite;
+   animation-duration: 720s;
+   border-radius: 50% 50% 20% 20%;
+}
+
+.time--margin {
+   margin-bottom: 100px;
+}
+
+@keyframes time {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes time-two {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+
+/* Mario */
+.mario-game {
+   position: relative;
+   width: 1900px;
+   height: 962px;
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+.mario-game--margin {
+   margin-bottom: 100px;
+}
+
+.mario-game:hover .mario-game__item {
+   animation-name: go-bottom;
+}
+
+.mario-game:hover .mario-game__mario-icon {
+   animation-name: mario-icon;
+}
+
+.mario-game:hover .mario::before {
+   animation-name: mario;
+}
+
+.mario-game__item {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 10%;
+   height: 100%;
+   background-color: black;
+   animation-name: none;
+   animation-duration: 5s;
+   animation-fill-mode: forwards;
+}
+.mario-game__item:nth-child(2){
+   top: 0;
+   animation-delay: 0.1s;
+}
+.mario-game__item:nth-child(3){
+   left: 190px;
+   animation-delay: 0.2s;
+}
+.mario-game__item:nth-child(4){
+   left: 380px;
+   animation-delay: 0.3s;
+   
+}
+.mario-game__item:nth-child(5){
+   left: 570px;
+   animation-delay: 0.4s;
+   
+}
+.mario-game__item:nth-child(6){
+   left: 760px;
+   animation-delay: 0.5s;
+   
+}
+.mario-game__item:nth-child(7){
+   left: 950px;
+   animation-delay: 0.6s;
+   
+}
+.mario-game__item:nth-child(8){
+   left: 1140px;
+   animation-delay: 0.7s;
+   
+}
+.mario-game__item:nth-child(9){
+   left: 1330px;
+   animation-delay: 0.8s;
+}
+.mario-game__item:nth-child(10){
+   left: 1520px;
+   animation-delay: 0.9s;
+}
+.mario-game__item:nth-child(11){
+   left: 1710px;
+   animation-delay: 1s;
+}
+
+@keyframes go-bottom {
+   0% {
+      transform: translate(0, 0);
+   }
+   100% {
+      transform: translate(0, 10000px);
+   }
+}
+
+.mario {
+   background: url(../img/mario/map-mario.png) 0 0/cover no-repeat;
+   height: 100%;
+   width: 100%;
+   position: relative;
+}
+
+.mario::before {
+   content: "";
+   position: absolute;
+   bottom: 155px;
+   left: 45px;
+   width: 35px;
+   height: 47px;
+   background: url(../img/mario/mario.png) 0 0/cover no-repeat;
+   animation-name: none;
+   animation-duration: 15s;
+   animation-timing-function: linear;
+   animation-delay: 1.7s;
+   animation-fill-mode: forwards;
+}
+
+.mario-game__mario-icon {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 200px;
+   animation-name: none;
+   animation-duration: 11s;
+   animation-delay: 0.2s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes mario-icon {
+   0% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+   }
+   100% {
+      transform: translate(0, 10000px);
+   }
+}
+
+@keyframes mario {
+   0%{
+      left: 45px;
+   }
+   8% {
+      left: 280px;
+      bottom: 155px;
+   }
+   14% {
+      bottom: 311px;
+      left: 230px;
+   }
+   17% {
+      left: 195px;
+      bottom: 311px;
+   }
+   25% {
+      bottom: 355px;
+      left: 365px;
+   }
+   27% {
+      bottom: 344px;
+      left: 377px;
+   }
+   31% {
+      bottom: 344px;
+      left: 390px;
+   }
+   35% {
+      bottom: 480px;
+      left: 423px;
+   }
+   43% {
+      bottom: 480px;
+      left: 515px;
+   }
+   47% {
+      bottom: 578px;
+      left: 528px;
+   }
+   53% {
+      bottom: 578px;
+      left: 610px;
+   }
+   58% {
+      bottom: 616px;
+      left: 682px;
+   }
+   66% {
+      bottom: 616px;
+      left: 830px;
+   }
+   70% {
+      bottom: 704px;
+      left: 820px;
+   }
+   73% {
+      bottom: 704px;
+      left: 780px;
+   }
+   77% {
+      left: 890px;
+      bottom: 748px;
+   }
+   81% {
+      left: 1060px;
+      bottom: 748px
+   }
+   84% {
+      left: 1100px;
+      bottom: 785px;
+   }
+   86% {
+      left: 1140px;
+      bottom: 748px;
+   }
+   90% {
+      left: 1285px;
+      bottom: 748px;
+   }
+   93% {
+      left: 1302px;
+      bottom: 831px;
+   }
+   95% {
+      left: 1395px;
+      bottom: 831px;
+   }
+   97% {
+      left: 1410px;
+      bottom: 748px;
+   }
+   100% {
+      left: 1860px;
+      bottom: 748px;
+   }
+}
+
+/* Cosmos */
+
+.cosmos {
+   background: url(../img/cosmos/cosmos.jpg);
+   width: 1900px;
+   height: 962px;
+   margin: 0 auto;
+   position: relative;
+   overflow: hidden;
+}
+
+.cosmos--margin {
+   margin-bottom: 100px;
+}
+
+.cosmos:hover .cosmos__raketa {
+   animation-name: raketa;
+}
+.cosmos:hover .cosmos__flag {
+   animation-name: flag;
+}
+.cosmos:hover .cosmos__flag::before {
+   animation-name: flag-uk;
+}
+
+.cosmos__luna {
+   width: 300px;
+   height: 300px;
+   position: relative;
+   top: 50%;
+   left: 50%;
+   z-index: 3;
+}
+
+.cosmos__raketa {
+   position: absolute;
+   top: 0px;
+   left: -100px;
+   width: 15px;
+   height: 50px;
+   background-color: #ebebeb;
+   border-radius: 100% 100% 10% 10%;
+   border: 1px solid #000;
+   transform: rotate(125deg);
+   animation-name: none;
+   animation-duration: 10s;
+   animation-fill-mode: forwards;
+}
+.cosmos__raketa::before {
+   content: "";
+   position: absolute;
+   top: 10px;
+   left: 3px;
+   background-color: #cfcfcf;
+   width: 8px;
+   height: 8px;
+   border-radius: 100%;
+   border: 1px solid #000;
+}
+
+.cosmos__raketa::after {
+   content: "";
+   position: absolute;
+   top: 47px;
+   left: -4px;
+   background: url(../img/cosmos/fair.png) 0 0/cover no-repeat;
+   width: 20px;
+   height: 20px;
+}
+
+.cosmos__left-raketa,
+.cosmos__right-raketa {
+   position: absolute;
+}
+
+.cosmos__left-raketa {
+   top: 28px;
+   left: -10px;
+   border-top: 20px solid transparent;
+	border-right: 10px solid #ebebeb;
+	border-bottom: 0px solid transparent;
+}
+.cosmos__right-raketa {
+   top: 28px;
+   left: 13px;
+   border-top: 20px solid transparent;
+	border-left: 10px solid #ebebeb;
+	border-bottom: 0px solid transparent;
+}
+
+@keyframes raketa {
+   0% {
+      left: -50px;
+   }
+   50% {
+      transform: rotate(125deg);
+   }
+   90% {
+      transform: rotate(320deg);
+   }
+   100% {
+      left: 979px;
+      top: 475px;
+      transform: rotate(320deg);
+   }
+}
+
+.cosmos__flag {
+   position: absolute;
+   top: 451px;
+   left: 1095px;
+   width: 3px;
+   height: 30px;
+   background-color: #fff;
+   animation-name: none;
+   animation-duration: 1s;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+   animation-timing-function: linear;
+   visibility: hidden;
+}
+
+.cosmos__flag::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 3px;
+   width: 15px;
+   height: 10px;
+   background: linear-gradient(0deg, rgba(254,255,0,1) 0%, rgba(0,138,255,1) 100%);
+   animation-name: none;
+   animation-duration: 0.6s;
+   animation-delay: 12.5s;
+   animation-fill-mode: forwards;
+   animation-timing-function: linear;
+   visibility: hidden;
+}
+
+@keyframes flag {
+   0% {
+      top: 482px;
+      visibility: visible;
+   }
+   100% {
+      top: 451px;
+      visibility: visible;
+   }
+}
+
+@keyframes flag-uk {
+   0% {
+      width: 0;
+      visibility: visible;
+   }
+   100% {
+      width: 15px;
+      visibility: visible;
+   }
+}
+
+/* Car */
+
+.car {
+   height: 500px;
+   background: url(../img/car/road.jpg) 0px 0/cover;
+   width: 100%;
+   height: 100vh;
+   animation-name: background-car;
+   animation-duration: 10s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+@keyframes background-car {
+   0% {
+      background: url(../img/car/road.jpg) 0px 0/cover;
+   }
+   100% {
+      background: url(../img/car/road.jpg) 100000px 0/cover;
+   }
+}
+
+.car__container {
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+.carcase {
+   position: relative;
+   top: 450px;
+   left: 100px;
+}
+
+.carcase__body {
+   width: 650px;
+   height: 150px;
+   position: absolute;
+   top: 200px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: black;
+   border-radius: 45% 10% 0% 0%;
+}
+
+.carcase__right-wheels,
+.carcase__left-wheels {
+   position: absolute;
+   width: 120px;
+   border-radius: 50%;
+   padding: 3px;
+   z-index: 6;
+   animation-name: wheels;
+   animation-duration: 0.1s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+@keyframes wheels {
+   0% {
+      transform: rotate(0);
+   }
+   100% {
+      transform: rotate(-360deg);
+   }
+}
+
+.carcase__wheels::before,
+.carcase__wheels::after {
+   content: "";
+   position: absolute;
+   background-color: #929292;
+   width: 119px;
+   height: 78px;
+   border-radius: 50% 50% 10% 10%;
+   z-index: 5;
+}
+.carcase__wheels::before {
+   top: 272px;
+   left: 195px;
+}
+.carcase__wheels::after {
+   top: 272px;
+   left: 620px;
+}
+
+.carcase__left-wheels {
+   top: 270px;
+   left: 195px;
+}
+.carcase__right-wheels {
+   top: 270px;
+   left: 620px;
+}
+
+.carcase__left-door,
+.carcase__right-door {
+   position: absolute;
+   width: 150px;
+   height: 147px;
+   background-color: black;
+   border: 1px solid #a5a5a5;
+   transform: skew(-5deg);
+   z-index: 4;
+}
+
+.carcase__left-door {
+   top: 200px;
+   left: 335px;
+   border-radius: 0px 0 5px 0px;
+}
+.carcase__right-door {
+   top: 200px;
+   left: 490px;
+   border-radius: 0px 0px 0px 5px;
+}
+
+.carcase__handle-right-door,
+.carcase__handle-left-door {
+   position: absolute;
+   width: 35px;
+   height: 10px;
+   background-color: grey;
+   border-radius: 30%;
+   z-index: 5;
+}
+
+.carcase__handle-left-door {
+   top: 215px;
+   left: 435px;
+}
+.carcase__handle-right-door {
+   top: 215px;
+   left: 590px;
+}
+
+
+.carcase__left-detals,
+.carcase__right-detals {
+   position: absolute;
+   width: 40px;
+   height: 20px;
+   background-color: rgb(49, 49, 49);
+}
+.carcase__left-detals {
+   top: 331px;
+   left: 124px;
+   border-radius: 0px 0px 2px 5px;
+}
+.carcase__right-detals {
+   top: 331px;
+   left: 749px;
+   width: 27px;
+   border-radius: 0px 0px 5px 2px;
+}
+.carcase__center-detals {
+   position: absolute;
+   top: 349px;
+   left: 311px;
+   width: 313px;
+   height: 5px;
+   background-color: rgb(49, 49, 49);
+}
+
+.carcase__top {
+   position: absolute;
+   top: 90px;
+   left: 303px;
+   background-color: black;
+   width: 400px;
+   height: 121px;
+   border-radius: 100% 50% 0% 0%;
+}
+
+.carcase__left-window-top,
+.carcase__right-window-top {
+   position: absolute;
+   background-color: #929292;
+   transform: skew(-5deg);
+}
+
+.carcase__left-window-top {
+   top: 26px;
+   left: 42px;
+   width: 150px;
+   height: 83px;
+   border-radius: 100% 0% 0% 0%;
+}
+
+.carcase__right-window-top {
+   top: 26px;
+   left: 198px;
+   width: 149px;
+   height: 83px;
+   border-radius: 0% 45% 0% 0%;
+}
+
+
+.carcase__left-headlights,
+.carcase__right-headlights {
+   position: absolute;
+}
+.carcase__left-headlights {
+   top: 238px;
+   left: 125px;
+   width: 30px;
+   height: 25px;
+   background-color: rgb(218, 221, 18);
+   border-radius: 100% 0% 50% 0%;
+   border-right: 3px solid grey;
+   border-bottom: 3px solid grey;
+}
+.carcase__right-headlights {
+   top: 202px;
+   left: 746px;
+   width: 30px;
+   height: 25px;
+   background-color: rgb(185, 36, 36);
+   border-radius: 0% 100% 47% 50%;
+   border-left: 2px solid grey;
+   border-bottom: 2px solid grey;
+}
+
+.carcase__light-left-headlights {
+   width: 30px;
+   height: 25px;
+   position: absolute;
+   top: 0;
+   left: 0px;
+   background-color: rgb(251, 255, 0);
+   border-radius: 100% 0% 50% 0%;
+   border-right: 3px solid grey;
+   border-bottom: 3px solid grey;
+   visibility: hidden;
+}
+
+.carcase__light-right-headlights {
+   position: absolute;
+   top: 0px;
+   left: -2px;
+   width: 30px;
+   height: 25px;
+   background-color: rgb(255, 0, 0);
+   border-radius: 0% 100% 47% 50%;
+   border-left: 2px solid grey;
+   border-bottom: 2px solid grey;
+   visibility: hidden;
+}
+
+.carcase:hover .carcase__light-left-headlights {
+   visibility: visible;
+}
+
+.carcase:hover .carcase__light-right-headlights {
+   visibility: visible;
+}
