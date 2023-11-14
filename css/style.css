@@ -1,0 +1,463 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Обнулення стилів */
+@import url("reset.css");
+
+/* Прибиття футера до низу */
+.wrapper {
+   min-height: 100%;
+   overflow: flip;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper > main {
+   flex: 1 1 auto;
+}
+
+/* Загальні стилі */
+body {
+   font-family: "Causten", sans-serif;
+   color: #807D7E;
+}
+
+[class*="__container"] {
+   max-width: 1270px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+/* header */
+.header {
+   padding: 32px 0;
+}
+.header__content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.header__search {
+   padding: 12px 48px 12px 80px;
+   font-weight: 500;
+   font-size: 18px;
+   background-color: #F6F6F6;
+   border-radius: 8px;
+   position: relative;
+   margin: 0 auto;
+}
+
+.header__search::before {
+   content: "";
+   display: inline-block;
+   position: absolute;
+   top: 10px;
+   left: 48px;
+   width: 20px;
+   height: 20px;
+   background: url(../img/header/search.svg) 0 0/cover no-repeat;
+}
+.header__change-language {
+   color: #333;
+   font-size: 18px;
+   position: relative;
+   margin-right: 60px;
+}
+.header__change-language a {
+   padding-right: 29px;
+   transition: all 0.4s;
+}
+.header__change-language a::after {
+   content: "";
+   position: absolute;
+   top: 6px;
+   right: 0;
+   border-top: 5px solid #333;
+   border-left: 5px solid transparent;
+   border-right: 5px solid transparent;
+   transition: all 0.4s;
+}
+
+.header__change-language a:hover::after {
+   border-top: 5px solid #818181;
+}
+
+.header__change-language a:hover {
+   color: #818181;
+   text-shadow: 0px 0px 0px #818181;
+}
+
+.header__login {
+   color: #FFF;
+   font-size: 18px;
+   font-weight: 500;
+   padding: 12px 48px;
+   border-radius: 8px;
+   background: #8A33FD;
+   margin-right: 29px;
+   transition: color 0.4s, background 0.4s;
+}
+.header__login:hover {
+   color: #8A33FD;
+   border: 1px solid #3C4242;
+   background-color: #fff;
+   padding: 11px 47px;
+}
+.header__sign-up {
+   color: #8A33FD;
+   font-size: 18px;
+   font-weight: 500;
+   padding: 11px 47px;
+   border-radius: 8px;
+   border: 1px solid #3C4242;
+   transition: color 0.4s, background 0.4s;
+}
+.header__sign-up:hover {
+   color: #FFF;
+   padding: 12px 48px;
+   background: #8A33FD;
+   border: none;
+}
+
+
+/* Cards men */
+.categories-men {
+   padding: 50px 0;
+}
+.categories-men__title {
+   color: #3C4242;
+   font-family: "Core Sans C", sans-serif;
+   font-size: 34px;
+   font-weight: 600;
+   line-height: 1.2;
+   letter-spacing: 0.68px;
+   padding-left: 26px;
+   margin-bottom: 70px;
+   position: relative;
+}
+.categories-men__title::before {
+   content: "";
+   position: absolute;
+   top: 6px;
+   left: 0;
+   width: 6px;
+   height: 30px;
+   border-radius: 10px;
+   background: #8A33FD;
+}
+.card-items {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 50px;
+}
+.card-items__item {
+   flex: 1 1 270px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.card-items__foto-item {
+   margin-bottom: 15px;
+   overflow: hidden;
+   border-radius: 10px;
+   width: 100%;
+}
+.card-items__foto-item img {
+   width: 100%;
+   transition: all 0.4s;
+}
+.card-items__foto-item img:hover {
+   transform: scale(1.1);
+}
+.card-items__body-item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.card-items__title-item {
+   color: #2A2F2F;
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 1.56;
+   letter-spacing: -0.715px;
+}
+.card-items__title-item a {
+   transition: all 0.3s;
+}
+.card-items__title-item a:hover {
+   color: #7824e7;
+}
+.card-items__sub-title-item {
+   color: #7F7F7F;
+   font-size: 13px;
+   font-weight: 500;
+   line-height: 2.08;
+   letter-spacing: -0.536px;
+}
+.card-items__arrow-item {
+   padding: 2px;
+   margin: -2px;
+}
+
+/* Orders */
+
+.orders {
+   padding: 50px 0px;
+}
+.orders__container {
+   max-width: 925px;
+}
+.orders__title {
+   color: #3C4242;
+   font-family: "Core Sans C", sans-serif;
+   font-size: 28px;
+   font-weight: 600;
+   line-height: 1.19;
+   letter-spacing: 0.56px;
+   margin-bottom: 38px;
+}
+.orders__item {
+   position: relative;
+   padding-bottom: 30px;
+}
+.orders__item:not(:last-child) {
+   margin-bottom: 30px;
+}
+.orders__item::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 1px;
+   background-color: #EDEEF2;
+}
+
+/* Загальні стилі для елементів orders */
+
+/* info-orders */
+.info-orders-title {
+   font-size: 14px;
+   font-weight: 600;
+}
+.info-orders-title:not(:last-child) {
+   margin-bottom: 7px
+}
+
+.info-orders-span {
+   color: #BEBCBD;
+   font-weight: 400;
+}
+
+/* card-orders */
+.card-orders-title {
+   color: #3C4242;
+   font-size: 14px;
+   font-weight: 600;
+}
+
+.card-orders-title:not(:last-child) {
+   margin-bottom: 5px;
+}
+
+.card-orders-span {
+   color: #BEBCBD;
+   font-weight: 600;
+}
+/* ------------------------------------ */
+
+.info-orders {
+   padding: 28px 47px;
+   border-radius: 8px;
+   background: #F6F6F6;
+}
+.info-orders:not(:last-child) {
+   margin-bottom: 30px;
+}
+.info-orders__num-order {
+   color: #3C4242;
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 14px;
+}
+.info-orders__body {
+   display: flex;
+   justify-content: space-between;
+}
+.info-orders__right {
+   text-align: right;
+}
+.card-orders {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.card-orders__foto {
+   margin-right: 25px;
+   overflow: hidden;
+   border-radius: 10px;
+   max-width: 96px;
+   border-radius: 4px;
+}
+.card-orders__foto img {
+   width: 100%;  
+   transition: all 0.4s;
+}
+.card-orders__foto img:hover {
+   transform: scale(1.1);
+}
+.card-orders__info {
+   margin-right: auto;
+}
+.card-orders__title {
+   color: #3C4242;
+   font-size: 16px;
+   font-weight: 600;
+   margin-bottom: 10px;
+   transition: all 0.3s;
+}
+.card-orders__title:hover {
+   color: #7824e7;
+}
+.card-orders__total {
+   font-size: 14px;
+   font-weight: 600;
+}
+
+.card-orders__btn {
+   color: #FFF;
+   font-size: 18px;
+   font-weight: 500;
+   padding: 14px 28px;
+   border-radius: 8px;
+   background: #8A33FD;
+   transition: color 0.4s, background 0.4s;
+}
+
+.card-orders__btn:hover {
+   color: #8A33FD;
+   border: 1px solid #3C4242;
+   background: #fff;
+   padding: 13px 27px;
+}
+
+/* Wishlist */
+
+/* загальні стилі для title wishlist */
+.wishlist-general-title {
+   color: #3C4242;
+   font-size: 22px;
+   font-weight: 700;
+   letter-spacing: 0.44px;
+}
+.wishlist-general-title:not(:last-child) {
+   margin-bottom: 12px;
+}
+/* --------------------------------- */
+
+.wishlist {
+   padding: 50px 0;
+}
+.wishlist__container {
+   max-width: 930px;
+}
+.wishlist__title {
+   color: #3C4242;
+   font-family: "Core Sans C", sans-serif;
+   font-size: 28px;
+   font-weight: 600;
+   line-height: 1.19;
+   letter-spacing: 0.56px;
+   margin-bottom: 50px;
+}
+.wishlist__item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 30px;
+   padding-left: 50px;
+   position: relative;
+}
+.wishlist__item:not(:last-child){
+   margin-bottom: 30px;
+}
+.wishlist__item::before {
+   content: "";
+   position: absolute;
+   top: 50px;
+   left: 0;
+   background: url(../img/icon/cross.svg) 0 0/cover no-repeat;
+   width: 16px;
+   height: 16px;
+   cursor: pointer;
+}
+
+.wishlist__item::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 1px;
+   background-color: #EDEEF2;
+}
+.wishlist__foto {
+   margin-right: 36px;
+   max-width: 110px;
+   border-radius: 4px;
+   overflow: hidden;
+}
+.wishlist__foto img {
+   width: 100%;
+   transition: all 0.4s;
+}
+.wishlist__foto img:hover {
+   transform: scale(1.1);
+}
+.wishlist__info {
+   margin-right: auto;
+}
+.wishlist__title-info {
+   transition: all 0.3s;
+}
+.wishlist__title-info:hover {
+   color: #7824e7;
+}
+.wishlist__span-info {
+   color: #807D7E;
+   font-size: 22px;
+   font-weight: 500;
+   letter-spacing: 0.44px;
+}
+.wishlist__price {
+   margin-right: 50px;
+   font-size: 22px;
+   font-weight: 700;
+   letter-spacing: 0.44px;
+}
+.wishlist__btn {
+   color: #FFF;
+   font-size: 18px;
+   font-weight: 500;
+   padding: 14px 28px;
+   border-radius: 8px;
+   background: #8A33FD;
+   transition: color 0.4s, background 0.4s;
+}
+.wishlist__btn:hover {
+   color: #8A33FD;
+   border: 1px solid #3C4242;
+   background: #fff;
+   padding: 13px 27px;
+}
+
+/* footer */
+
+.footer {
+   font-size: 25px;
+   font-weight: 700;
+   padding: 50px 0;
+   background-color: #7F7F7F;
+   color: #fff;
+   text-align: center;
+}
