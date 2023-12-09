@@ -1,0 +1,177 @@
+@media (max-width: 991.8px) {
+   .block-cards-top__item {
+      padding: 50px 25px;
+   }
+   .block-cards-top__sub-title {
+      font-size: 16px;
+      margin-bottom: 15px;
+   }
+   .block-cards-top__title {
+      font-size: 28px;
+      margin-bottom: 13px;
+   }
+   .block-cards-top__discount {
+      font-size: 14px;
+      margin-bottom: 25px;
+   }
+   .block-cards-top__link {
+      font-size: 17px;
+   }
+}
+
+@media (max-width: 768.8px) {
+   .page__cards-top,
+   .page__new-arrival,
+   .saving-zone {
+      padding: 30px 0;
+   }
+   .new-arrival__title {
+      margin-bottom: 40px;
+   }
+   .cards-new-arrival__foto {
+      margin-bottom: 22px;
+   }
+   .saving-zone__title {
+      margin-bottom: 40px;
+   }
+   .cards-saving-zone__item:nth-child(1) {
+      grid-column: 1 / 4;
+   }
+   .cards-saving-zone__item:nth-child(2) {
+      grid-column: 4 / 7;
+   }
+   .cards-saving-zone__item:nth-child(3) {
+      grid-column: 1 / 4;
+   }
+   .cards-saving-zone__item:nth-child(4) {
+      grid-column: 4 / 7;
+   }
+   .cards-saving-zone__item:nth-child(5) {
+      grid-column: 2 / 6;
+   }
+   .cards-saving-zone__item:nth-child(4),
+   .cards-saving-zone__item:nth-child(5) {
+      padding-right: 20px;
+   }
+   .cards-saving-zone__item:nth-child(1) .cards-saving-zone__image {
+      object-position: right;
+   }
+   .cards-saving-zone__item .cards-saving-zone__image{
+      object-position: left;
+   }
+   .cards-saving-zone__item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 12px;
+   }
+   .cards-saving-zone__item:nth-child(1):before,
+   .cards-saving-zone__item:nth-child(2):before {
+      background-color: rgba(0, 0, 0, 0.3);
+   }
+
+}
+@media (max-width: 569px) {
+   .cards-new-arrival {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+   }
+}
+
+@media (max-width: 480.8px) {
+   .block-cards-top__item {
+      position: relative;
+      overflow: hidden;
+   }
+   .block-cards-top__item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.1);
+   }
+   .block-cards-top__item:nth-child(1) {
+      background: url(../img/block-top/cards-image-1.jpg) center right / cover no-repeat;
+   }
+   .block-cards-top__item:nth-child(2) {
+      background: url(../img/block-top/cards-image-2.jpg) center right / cover no-repeat;
+   } 
+   .block-cards-top__content {
+      position: relative;
+      z-index: 2;
+   }
+   .new-arrival__title {
+      margin-bottom: 25px;
+      font-size: 32px;
+   }
+   .cards-new-arrival {
+      gap: 25px;
+   }
+   .cards-new-arrival__text {
+      text-align: center;
+   }
+   .cards-new-arrival__foto {
+      margin-bottom: 10px;
+   }
+   
+   .cards-new-arrival__text {
+      text-decoration: underline;
+   }
+   .saving-zone__title {
+      margin-bottom: 25px;
+      font-size: 32px;
+   }
+   .cards-saving-zone__item:nth-child(1) {
+      grid-column: 1 / 7;
+   }
+   .cards-saving-zone__item:nth-child(2) {
+      grid-column: 1 / 7;
+   }
+   .cards-saving-zone__item:nth-child(3) {
+      grid-column: 1 / 7;
+   }
+   .cards-saving-zone__item:nth-child(4) {
+      grid-column: 1 / 7;
+   }
+   .cards-saving-zone__item:nth-child(5) {
+      grid-column: 1 / 7;
+   }
+   .cards-saving-zone__item {
+      justify-content: center;
+      text-align: center;
+   }
+   .cards-saving-zone__arrow {
+      align-self: center;
+      padding: 0;
+   }
+   .cards-saving-zone__link {
+      align-self: center;
+   }
+   .cards-saving-zone__item:nth-child(4) .cards-saving-zone__arrow, 
+   .cards-saving-zone__item:nth-child(5) .cards-saving-zone__arrow {
+      padding: 0;
+   }
+   .cards-saving-zone__item:nth-child(2) .cards-saving-zone__content {
+      text-align: center;
+   }
+   .cards-saving-zone__item:nth-child(2) .cards-saving-zone__link, 
+   .cards-saving-zone__item:nth-child(2) .cards-saving-zone__arrow, 
+   .cards-saving-zone__item:nth-child(2) .cards-saving-zone__limited-item {
+      align-self: center;
+   }
+   .cards-saving-zone__item:nth-child(2) .cards-saving-zone__arrow {
+      padding: 0;
+   }
+   .cards-saving-zone__item:nth-child(1) {
+      justify-content: center;
+   }
+   .cards-saving-zone__item:nth-child(1) .cards-saving-zone__image {
+      object-position: center;
+   }
+}
